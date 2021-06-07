@@ -7,7 +7,7 @@ def read_data(input_file):
     output = pd.Series(input_data[:, dates], index = dates)
     return output
 if __name__=='__main__':
-    input_file = "/Users/777/Desktop"
+    input_file = "/Users/777/Desktop/AO.txt"
     timeseries = read_data(input_file)
     plt.figure()
     timeseries.plot()
